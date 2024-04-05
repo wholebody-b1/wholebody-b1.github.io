@@ -253,9 +253,30 @@
 
         <div class="row" style="margin-top: 100px;">
             <h3 class="col-md-8 col-md-offset-2" style="font-size: 32px; font-weight: bold; text-align:center; margin-bottom: 50px;">
+                Low-Level and High-Level Policy Training in Simulation
+            </h3>
+            <div class="col-md-12 text-center" style="column-gap: 40px; line-height: 30px">
+                <div class="col-md-8 col-md-offset-2">
+                <p class="text-justify" style="font-size: 16px;">
+                All policies are trained parallelly in simulation. The low-level policy is trained to track the end-effector manipulator position, while the high-level policy is trained to propose the end-effector position based on visual inputs. The low-level policy may fail to track some goals due to the IK fail, but the high-level policy will learn to avoid those pose.</p></div>
+                <video id="f2" width="33%" style="border-radius: 10px;" autoplay loop muted controls>
+                    <source src="img/videos/sim/lowlevel.mp4" type="video/mp4" />
+                </video>
+                <video id="f2" width="33%" style="border-radius: 10px;" autoplay loop muted controls>
+                    <source src="img/videos/sim/highlevel.mov" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 100px;">
+            <h3 class="col-md-8 col-md-offset-2" style="font-size: 32px; font-weight: bold; text-align:center; margin-bottom: 50px;">
                 <a href="https://github.com/Ericonaldo/Tracking_SAM/tree/dev" style="font-size: 28px;">Tracking SAM</a> Annotation Explain
             </h3>
             <div class="col-md-12 text-center" style="column-gap: 40px; line-height: 50px">
+                <div class="col-md-8 col-md-offset-3">
+                <p class="text-justify" style="font-size: 16px;">
+                    We only assign object masks to be grasped by this tool, after annotation all pickup behaviors are automatically performed.<br>
+                </p></div>
                 <video id="f2" width="50%" style="border-radius: 10px;" autoplay loop muted controls>
                     <source src="img/videos/workflow-comp.mp4" type="video/mp4" />
                 </video>
@@ -267,7 +288,10 @@
                 Representative Failure Cases
             </h3>
             <div class="col-md-12 text-center" style="column-gap: 40px; line-height: 50px">
+                    <div class="col-md-8 col-md-offset-2">
+                    <p class="text-justify" style="font-size: 15px;">
                 The robot may fail due to several reasons, like the failure of the depth perception, the lost of the tracking mask, the inproper design of the Z1 gripper, and also generalization error.<br>
+                </p></div>
                 <video id="f1" width="24%" style="border-radius: 10px;" autoplay loop muted controls>
                     <source src="img/videos/failure-case/depth-fail-comp.mp4" type="video/mp4" />
                 </video>&nbsp;&nbsp;&nbsp;&nbsp;
@@ -277,7 +301,6 @@
                 <video id="f2" width="24%" style="border-radius: 10px;" autoplay loop muted controls>
                     <source src="img/videos/failure-case/box-fail-comp.mp4" type="video/mp4" />
                 </video>
-            </div>
         </div>
 
         <div class="row" style="margin-top: 100px;">
