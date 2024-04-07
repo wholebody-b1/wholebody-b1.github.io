@@ -258,7 +258,7 @@
             <div class="col-md-12 text-center" style="column-gap: 40px; line-height: 30px">
                 <div class="col-md-8 col-md-offset-2">
                 <p class="text-justify" style="font-size: 16px;">
-                All policies are trained parallelly in simulation. The low-level policy is trained to track the end-effector manipulator position, while the high-level policy is trained to propose the end-effector position based on visual inputs. The low-level policy may fail to track some goals due to the IK fail, but the high-level policy will learn to avoid those pose.</p></div>
+                All policies are trained parallelly in simulation. The low-level policy is trained to track the given end-effector pose and body velocities, while the high-level policy is trained to propose the end-effector position based on visual inputs. The low-level policy may fail to track some goals due to the IK fail, but the high-level policy will learn to avoid those pose.</p></div>
                 <video id="f2" width="33%" style="border-radius: 10px;" autoplay loop muted controls>
                     <source src="img/videos/sim/lowlevel.mp4" type="video/mp4" />
                 </video>
